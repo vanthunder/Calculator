@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="Calculator.CalculatorController">
+   <center>
+      <AnchorPane BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="B1" layoutX="78.0" layoutY="339.0" mnemonicParsing="false" onAction="#B1press" text="1">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="B2" layoutX="135.0" layoutY="339.0" mnemonicParsing="false" onAction="#B2press" text="2">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="B3" layoutX="193.0" layoutY="339.0" mnemonicParsing="false" onAction="#B3press" text="3">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="B6" layoutX="193.0" layoutY="276.0" mnemonicParsing="false" onAction="#B6press" text="6">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="B5" layoutX="135.0" layoutY="276.0" mnemonicParsing="false" onAction="#B5press" text="5">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="B4" layoutX="78.0" layoutY="276.0" mnemonicParsing="false" onAction="#B4press" text="4">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="B7" layoutX="78.0" layoutY="208.0" mnemonicParsing="false" onAction="#B7press" text="7">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="B8" layoutX="135.0" layoutY="208.0" mnemonicParsing="false" onAction="#B8press" text="8">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="B9" layoutX="193.0" layoutY="208.0" mnemonicParsing="false" onAction="#B9press" text="9">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="B0" layoutX="135.0" layoutY="400.0" mnemonicParsing="false" onAction="#B0press" text="0">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="plus" layoutX="317.0" layoutY="208.0" mnemonicParsing="false" onAction="#pluspress" prefHeight="51.0" prefWidth="54.0" text="+">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="minus" layoutX="317.0" layoutY="276.0" mnemonicParsing="false" onAction="#minuspress" prefHeight="51.0" prefWidth="52.0" text="-">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="divide" layoutX="318.0" layoutY="400.0" mnemonicParsing="false" onAction="#dividepress" prefHeight="51.0" prefWidth="51.0" text="/">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="multiplier" layoutX="317.0" layoutY="339.0" mnemonicParsing="false" onAction="#multiplierpress" prefHeight="51.0" prefWidth="54.0" text="*">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="result" layoutX="430.0" layoutY="400.0" mnemonicParsing="false" onAction="#resultpress" prefHeight="51.0" prefWidth="54.0" text="=">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+            <TextField fx:id="Window" layoutX="78.0" layoutY="68.0" prefHeight="76.0" prefWidth="315.0">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </TextField>
+            <Label fx:id="label" layoutX="198.0" layoutY="11.0" prefHeight="38.0" prefWidth="115.0" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
