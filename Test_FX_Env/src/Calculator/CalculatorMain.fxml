@@ -85,7 +85,7 @@
                   <Font size="24.0" />
                </font>
             </Button>
-            <TextField fx:id="Window" layoutX="78.0" layoutY="68.0" prefHeight="76.0" prefWidth="315.0">
+            <TextField fx:id="Window" layoutX="81.0" layoutY="104.0" prefHeight="42.0" prefWidth="315.0" text="200202020220202">
                <font>
                   <Font size="24.0" />
                </font>
