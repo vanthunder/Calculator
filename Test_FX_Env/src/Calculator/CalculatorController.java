@@ -45,7 +45,7 @@ public class CalculatorController implements Initializable
 	 private int input2;
 	 
 	 //strings to save input
-	 private String sinput;
+	 private String sinput = "";
 	 private String inttostring;
 	 @FXML
 	 private Label label;
@@ -64,107 +64,117 @@ public class CalculatorController implements Initializable
 	   public void B0press(ActionEvent event) 
 	   
 	   {
-	       System.out.println("Button 0 Clicked!");
-	       input1=0;
-	       inttostring=Integer.toString(input1);
-	       Window.setText(inttostring);
-	       
-	       
+		   System.out.println("Button 0 Clicked!");
+	       sinput=sinput+"0";
+	       input1=Integer.parseInt(sinput);
+	       System.out.println(sinput);
+	       Window.setText(sinput);
 	   }
       public void B1press(ActionEvent event) 
 	   
 	   {
     	   System.out.println("Button 1 Clicked!");
-	       input1=1;
-	       inttostring=Integer.toString(input1);
-	       input1=Integer.parseInt(inttostring);
-	       System.out.println(input1);
-	       Window.setText(inttostring);
-	       
-	   }
+	       sinput=sinput+"1";
+	       input1=Integer.parseInt(sinput);
+	       System.out.println(sinput);
+	       Window.setText(sinput);
+	    }
       public void B2press(ActionEvent event) 
 	   
 	   {
-	       System.out.println("Button 0 Clicked!");
-	       
+    	   System.out.println("Button 2 Clicked!");
+	       sinput=sinput+"2";
+	       input1=Integer.parseInt(sinput);
+	       System.out.println(sinput);
+	       Window.setText(sinput);
 	   }
       public void B3press(ActionEvent event) 
 	   
 	   {
-	       System.out.println("Button 0 Clicked!");
-	       
+    	   System.out.println("Button 3 Clicked!");
+	       sinput=sinput+"3";
+	       input1=Integer.parseInt(sinput);
+	       System.out.println(sinput);
+	       Window.setText(sinput);
 	   }
      public void B4press(ActionEvent event) 
 	   
 	   {
-	       System.out.println("Button 0 Clicked!");
-	       
+    	   System.out.println("Button 4 Clicked!");
+	       sinput=sinput+"4";
+	       input1=Integer.parseInt(sinput);
+	       System.out.println(sinput);
+	       Window.setText(sinput);
 	   }
      public void B5press(ActionEvent event) 
 	   
 	   {
-	       System.out.println("Button 0 Clicked!");
-	       
-	   }
+    	   System.out.println("Button 5 Clicked!");
+	       sinput=sinput+"5";
+	       input1=Integer.parseInt(sinput);
+	       System.out.println(sinput);
+	       Window.setText(sinput);
+	    }
      public void B6press(ActionEvent event) 
 	   
 	   {
-	       System.out.println("Button 0 Clicked!");
-	       
+    	   System.out.println("Button 6 Clicked!");
+	       sinput=sinput+"6";
+	       input1=Integer.parseInt(sinput);
+	       System.out.println(sinput);
+	       Window.setText(sinput);
 	   }
     public void B7press(ActionEvent event) 
 	   
 	   {
-	       System.out.println("Button 0 Clicked!");
-	       
+    	   System.out.println("Button 7 Clicked!");
+	       sinput=sinput+"7";
+	       input1=Integer.parseInt(sinput);
+	       System.out.println(sinput);
+	       Window.setText(sinput);
 	   }
     public void B8press(ActionEvent event) 
 	   
 	   {
-	       System.out.println("Button 0 Clicked!");
+    	   System.out.println("Button 8 Clicked!");
+	       sinput=sinput+"8";
+	       input1=Integer.parseInt(sinput);
+	       System.out.println(sinput);
+	       Window.setText(sinput);
 	   }   
     public void B9press(ActionEvent event) 
 	   
 	   {
-	       System.out.println("Button 0 Clicked!");
-	       
+    	   System.out.println("Button 9 Clicked!");
+	       sinput=sinput+"9";
+	       input1=Integer.parseInt(sinput);
+	       System.out.println(sinput);
+	       Window.setText(sinput);
 	   }
- public void pluspress(ActionEvent event) 
+    public void pluspress(ActionEvent event) 
 	   
 	   {
 	       System.out.println("Button 0 Clicked!");
 	       
 	   }
- public void minuspress(ActionEvent event) 
+    public void minuspress(ActionEvent event) 
 	   
 	   {
 	       System.out.println("Button 0 Clicked!");
 	   }
- public void dividepress(ActionEvent event) 
- 
- {
-     System.out.println("Button 0 Clicked!");
- }
+    public void dividepress(ActionEvent event) 
+      {
+          System.out.println("Button 0 Clicked!");
+      }
  public void multiplierpress(ActionEvent event) 
- 
- {
+     {
      System.out.println("Button 0 Clicked!");
- }
+     }
  public void resultpress(ActionEvent event) 
- 
- {
+    {
      System.out.println("Button 0 Clicked!");
- }
+    }
  
- 
- public void inputSequenze()
- {
-	while(sinput!=null)
-	{
-		inttostring=Integer.toString(input1);
-	}
-	System.out.println(inttostring);
- }
 	   
 	  
 	}
