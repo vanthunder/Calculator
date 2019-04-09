@@ -6,10 +6,9 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.BorderPane?>
 
-
-<BorderPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="Calculator.CalculatorController">
+<BorderPane prefHeight="451.0" prefWidth="491.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Calculator.CalculatorController">
    <center>
-      <AnchorPane BorderPane.alignment="CENTER">
+      <AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="482.0" prefWidth="491.0" BorderPane.alignment="CENTER">
          <children>
             <Button fx:id="B1" layoutX="78.0" layoutY="339.0" mnemonicParsing="false" onAction="#B1press" text="1">
                <font>
@@ -81,7 +80,7 @@
                   <Font size="24.0" />
                </font>
             </Button>
-            <Button fx:id="result" layoutX="430.0" layoutY="400.0" mnemonicParsing="false" onAction="#resultpress" prefHeight="51.0" prefWidth="54.0" text="=">
+            <Button fx:id="result" layoutX="189.0" layoutY="400.0" mnemonicParsing="false" onAction="#resultpress" prefHeight="51.0" prefWidth="50.0" text="=">
                <font>
                   <Font size="24.0" />
                </font>
@@ -92,6 +91,7 @@
                </font>
             </TextField>
             <Label fx:id="label" layoutX="198.0" layoutY="11.0" prefHeight="38.0" prefWidth="115.0" />
+            <Button fx:id="clrButton" layoutX="77.0" layoutY="400.0" mnemonicParsing="false" onAction="#clrpress" prefHeight="50.0" prefWidth="46.0" text="CLR" />
          </children>
       </AnchorPane>
    </center>

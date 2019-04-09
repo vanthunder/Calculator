@@ -33,6 +33,7 @@ public class CalculatorController implements Initializable
 	 private Button divide;
 	 private Button multiplier;
 	 private Button result;
+	 private Button clrButton;
 	 
 	 //Textfield
 	 @FXML
@@ -46,6 +47,8 @@ public class CalculatorController implements Initializable
 	 
 	 //strings to save input
 	 private String sinput = "";
+	 private String sinput2 = "";
+	 private String operatorInput = "";
 	 private String inttostring;
 	 @FXML
 	 private Label label;
@@ -65,10 +68,20 @@ public class CalculatorController implements Initializable
 	   
 	   {
 		   System.out.println("Button 0 Clicked!");
+		   if(operatorInput.contentEquals(""))
+		   {
 	       sinput=sinput+"0";
 	       input1=Integer.parseInt(sinput);
 	       System.out.println(sinput);
 	       Window.setText(sinput);
+		   }
+		   if(!operatorInput.contentEquals(""))
+		   {
+		   sinput2=sinput2+"0";
+		   input2=Integer.parseInt(sinput2);
+		   System.out.println(sinput2);
+		   Window.setText(sinput+" "+operatorInput+" "+sinput2);
+		   }
 	   }
       public void B1press(ActionEvent event) 
 	   
@@ -154,27 +167,46 @@ public class CalculatorController implements Initializable
     public void pluspress(ActionEvent event) 
 	   
 	   {
-	       System.out.println("Button 0 Clicked!");
-	       
+    	   System.out.println("Button + Clicked!");
+	       operatorInput="+";
+	       System.out.println(operatorInput);
+	       Window.setText(sinput+" "+operatorInput);
 	   }
     public void minuspress(ActionEvent event) 
 	   
 	   {
-	       System.out.println("Button 0 Clicked!");
+    	   System.out.println("Button + Clicked!");
+	       operatorInput="-";
+	       System.out.println(operatorInput);
+	       Window.setText(sinput+" "+operatorInput);
 	   }
     public void dividepress(ActionEvent event) 
       {
-          System.out.println("Button 0 Clicked!");
+    	   System.out.println("Button + Clicked!");
+	       operatorInput="/";
+	       System.out.println(operatorInput);
+	       Window.setText(sinput+" "+operatorInput);
       }
  public void multiplierpress(ActionEvent event) 
      {
-     System.out.println("Button 0 Clicked!");
+	 System.out.println("Button + Clicked!");
+     operatorInput="*";
+     System.out.println(operatorInput);
+     Window.setText(sinput+" "+operatorInput);
      }
  public void resultpress(ActionEvent event) 
     {
      System.out.println("Button 0 Clicked!");
     }
- 
+ public void clrpress(ActionEvent event) 
+ {
+ input1=0;
+ input2=0;
+ sinput="";
+ sinput2="";
+ operatorInput="";
+ Window.setText("");
+ }
 	   
 	  
 	}
