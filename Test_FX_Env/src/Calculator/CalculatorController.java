@@ -34,22 +34,27 @@ public class CalculatorController implements Initializable
 	 private Button multiplier;
 	 private Button result;
 	 private Button clrButton;
+	 private Button erase;
+	 private Button comma;
 	 
 	 //Textfield
 	 @FXML
 	 private TextField Window;
-	 private TextArea area;
 	 
 	 
 	 //ints to save inputs
 	 private int input1;
 	 private int input2;
 	 
+	 //double to save the result
+	 private double result1;
+	 
 	 //strings to save input
 	 private String sinput = "";
 	 private String sinput2 = "";
 	 private String operatorInput = "";
 	 private String inttostring;
+	 private String resultString;
 	 @FXML
 	 private Label label;
 	 
@@ -86,83 +91,173 @@ public class CalculatorController implements Initializable
       public void B1press(ActionEvent event) 
 	   
 	   {
-    	   System.out.println("Button 1 Clicked!");
+    	  System.out.println("Button 1 Clicked!");
+		   if(operatorInput.contentEquals(""))
+		   {
 	       sinput=sinput+"1";
 	       input1=Integer.parseInt(sinput);
 	       System.out.println(sinput);
 	       Window.setText(sinput);
+		   }
+		   if(!operatorInput.contentEquals(""))
+		   {
+		   sinput2=sinput2+"1";
+		   input2=Integer.parseInt(sinput2);
+		   System.out.println(sinput2);
+		   Window.setText(sinput+" "+operatorInput+" "+sinput2);
+		   }
 	    }
       public void B2press(ActionEvent event) 
 	   
 	   {
     	   System.out.println("Button 2 Clicked!");
+		   if(operatorInput.contentEquals(""))
+		   {
 	       sinput=sinput+"2";
 	       input1=Integer.parseInt(sinput);
 	       System.out.println(sinput);
 	       Window.setText(sinput);
+		   }
+		   if(!operatorInput.contentEquals(""))
+		   {
+		   sinput2=sinput2+"2";
+		   input2=Integer.parseInt(sinput2);
+		   System.out.println(sinput2);
+		   Window.setText(sinput+" "+operatorInput+" "+sinput2);
+		   }
 	   }
       public void B3press(ActionEvent event) 
 	   
-	   {
+	   { 
     	   System.out.println("Button 3 Clicked!");
+		   if(operatorInput.contentEquals(""))
+		   {
 	       sinput=sinput+"3";
 	       input1=Integer.parseInt(sinput);
 	       System.out.println(sinput);
 	       Window.setText(sinput);
+		   }
+		   if(!operatorInput.contentEquals(""))
+		   {
+		   sinput2=sinput2+"3";
+		   input2=Integer.parseInt(sinput2);
+		   System.out.println(sinput2);
+		   Window.setText(sinput+" "+operatorInput+" "+sinput2);
+		   }
 	   }
      public void B4press(ActionEvent event) 
 	   
 	   {
     	   System.out.println("Button 4 Clicked!");
+		   if(operatorInput.contentEquals(""))
+		   {
 	       sinput=sinput+"4";
 	       input1=Integer.parseInt(sinput);
 	       System.out.println(sinput);
 	       Window.setText(sinput);
+		   }
+		   if(!operatorInput.contentEquals(""))
+		   {
+		   sinput2=sinput2+"4";
+		   input2=Integer.parseInt(sinput2);
+		   System.out.println(sinput2);
+		   Window.setText(sinput+" "+operatorInput+" "+sinput2);
+		   }
 	   }
      public void B5press(ActionEvent event) 
 	   
 	   {
     	   System.out.println("Button 5 Clicked!");
+		   if(operatorInput.contentEquals(""))
+		   {
 	       sinput=sinput+"5";
 	       input1=Integer.parseInt(sinput);
 	       System.out.println(sinput);
 	       Window.setText(sinput);
+		   }
+		   if(!operatorInput.contentEquals(""))
+		   {
+		   sinput2=sinput2+"5";
+		   input2=Integer.parseInt(sinput2);
+		   System.out.println(sinput2);
+		   Window.setText(sinput+" "+operatorInput+" "+sinput2);
+		   }
 	    }
      public void B6press(ActionEvent event) 
 	   
 	   {
     	   System.out.println("Button 6 Clicked!");
+		   if(operatorInput.contentEquals(""))
+		   {
 	       sinput=sinput+"6";
 	       input1=Integer.parseInt(sinput);
 	       System.out.println(sinput);
 	       Window.setText(sinput);
+		   }
+		   if(!operatorInput.contentEquals(""))
+		   {
+		   sinput2=sinput2+"6";
+		   input2=Integer.parseInt(sinput2);
+		   System.out.println(sinput2);
+		   Window.setText(sinput+" "+operatorInput+" "+sinput2);
+		   }
 	   }
     public void B7press(ActionEvent event) 
 	   
 	   {
     	   System.out.println("Button 7 Clicked!");
+		   if(operatorInput.contentEquals(""))
+		   {
 	       sinput=sinput+"7";
 	       input1=Integer.parseInt(sinput);
 	       System.out.println(sinput);
 	       Window.setText(sinput);
+		   }
+		   if(!operatorInput.contentEquals(""))
+		   {
+		   sinput2=sinput2+"7";
+		   input2=Integer.parseInt(sinput2);
+		   System.out.println(sinput2);
+		   Window.setText(sinput+" "+operatorInput+" "+sinput2);
+		   }
 	   }
     public void B8press(ActionEvent event) 
 	   
 	   {
     	   System.out.println("Button 8 Clicked!");
+		   if(operatorInput.contentEquals(""))
+		   {
 	       sinput=sinput+"8";
 	       input1=Integer.parseInt(sinput);
 	       System.out.println(sinput);
 	       Window.setText(sinput);
+		   }
+		   if(!operatorInput.contentEquals(""))
+		   {
+		   sinput2=sinput2+"8";
+		   input2=Integer.parseInt(sinput2);
+		   System.out.println(sinput2);
+		   Window.setText(sinput+" "+operatorInput+" "+sinput2);
+		   }
 	   }   
     public void B9press(ActionEvent event) 
 	   
 	   {
     	   System.out.println("Button 9 Clicked!");
+		   if(operatorInput.contentEquals(""))
+		   {
 	       sinput=sinput+"9";
 	       input1=Integer.parseInt(sinput);
 	       System.out.println(sinput);
 	       Window.setText(sinput);
+		   }
+		   if(!operatorInput.contentEquals(""))
+		   {
+		   sinput2=sinput2+"9";
+		   input2=Integer.parseInt(sinput2);
+		   System.out.println(sinput2);
+		   Window.setText(sinput+" "+operatorInput+" "+sinput2);
+		   }
 	   }
     public void pluspress(ActionEvent event) 
 	   
@@ -175,38 +270,74 @@ public class CalculatorController implements Initializable
     public void minuspress(ActionEvent event) 
 	   
 	   {
-    	   System.out.println("Button + Clicked!");
+    	   System.out.println("Button - Clicked!");
 	       operatorInput="-";
 	       System.out.println(operatorInput);
 	       Window.setText(sinput+" "+operatorInput);
 	   }
     public void dividepress(ActionEvent event) 
       {
-    	   System.out.println("Button + Clicked!");
+    	   System.out.println("Button / Clicked!");
 	       operatorInput="/";
 	       System.out.println(operatorInput);
 	       Window.setText(sinput+" "+operatorInput);
       }
  public void multiplierpress(ActionEvent event) 
      {
-	 System.out.println("Button + Clicked!");
+	 System.out.println("Button * Clicked!");
      operatorInput="*";
      System.out.println(operatorInput);
      Window.setText(sinput+" "+operatorInput);
      }
  public void resultpress(ActionEvent event) 
     {
-     System.out.println("Button 0 Clicked!");
-    }
- public void clrpress(ActionEvent event) 
- {
- input1=0;
- input2=0;
- sinput="";
- sinput2="";
- operatorInput="";
- Window.setText("");
- }
-	   
+     System.out.println("Button = Clicked!");
+     if(operatorInput.contentEquals("+"))
+     {
+    	 //result1=input1+input1;
+    	 input1=input1-input2;
+    	 System.out.println(input1);
+         result1=input1;
+         
+     }
+     else
+     if(operatorInput.contentEquals("-"))
+     {
+         result1=input1-input1;
+     }
+     else
+     if(operatorInput.contentEquals("*"))
+     {   input1=input1*input2;
+         result1=input1;
+         System.out.println(input1);
+     }
+     else
+     if(operatorInput.contentEquals("/"))
+     {
+         result1=input1/input1;
+     }
+     System.out.println(input1);
+     resultString=String.valueOf(result1);
+     Window.setText(sinput+" "+operatorInput+" "+sinput2+" "+"="+" "+resultString);
+     }
+  public void clrpress(ActionEvent event) 
+     {
+	 System.out.println("CLR");
+     input1=0;
+     input2=0;
+     sinput="";
+     sinput2="";
+     operatorInput="";
+     Window.setText("");
+     }
+  public void commapress(ActionEvent event)
+  {
+	   //WIP
+	   System.out.println("Button , Clicked!");
+  }
+  public void erasepress(ActionEvent event)
+  {    //WIP
+	   System.out.println("Button , Clicked!");
+  }
 	  
 	}
