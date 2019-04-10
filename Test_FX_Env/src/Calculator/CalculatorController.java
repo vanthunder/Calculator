@@ -270,10 +270,27 @@ public class CalculatorController implements Initializable
     public void minuspress(ActionEvent event) 
 	   
 	   {
+    	   if(sinput.contentEquals(""))
+    	   {
+    		 sinput="-";
+    		 System.out.println(sinput);
+    		 Window.setText(sinput);
+    	   }
+    	   else
+    	   if(sinput2.contentEquals(""))
+    	   {
+    		 sinput2="-";
+      		 System.out.println(sinput2);
+      		 Window.setText(sinput+" "+operatorInput+" "+sinput2); 
+    	   }
+    	   else
+    	   if(!sinput.isEmpty() || sinput2.isEmpty())
+    	   {
     	   System.out.println("Button - Clicked!");
 	       operatorInput="-";
 	       System.out.println(operatorInput);
-	       Window.setText(sinput+" "+operatorInput);
+	       Window.setText(sinput+" "+operatorInput+" "+sinput2);
+    	   }
 	   }
     public void dividepress(ActionEvent event) 
       {
@@ -295,7 +312,7 @@ public class CalculatorController implements Initializable
      if(operatorInput.contentEquals("+"))
      {
     	 //result1=input1+input1;
-    	 input1=input1-input2;
+    	 input1=input1+input2;
     	 System.out.println(input1);
          result1=input1;
          
@@ -303,7 +320,7 @@ public class CalculatorController implements Initializable
      else
      if(operatorInput.contentEquals("-"))
      {
-         result1=input1-input1;
+         result1=input1-input2;
      }
      else
      if(operatorInput.contentEquals("*"))
