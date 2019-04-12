@@ -93,11 +93,25 @@
             <Button fx:id="clrButton" layoutX="181.0" layoutY="87.0" mnemonicParsing="false" onAction="#clrpress" prefHeight="51.0" prefWidth="49.0" text="CLR">
                <font>
                   <Font size="14.0" />
-               </font></Button>
+               </font>
+               <tooltip>
+                  <Tooltip opacity="0.5" text="Clears the screen!">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Tooltip>
+               </tooltip></Button>
             <Button fx:id="erase" layoutX="68.0" layoutY="87.0" mnemonicParsing="false" onAction="#erasepress" prefHeight="51.0" prefWidth="45.0" text="ERS">
                <font>
                   <Font size="14.0" />
                </font>
+               <tooltip>
+                  <Tooltip opacity="0.5" text="Ereases the last char!">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Tooltip>
+               </tooltip>
             </Button>
             <Button fx:id="comma" layoutX="68.0" layoutY="339.0" mnemonicParsing="false" onAction="#commapress" prefHeight="51.0" prefWidth="45.0" text=",">
                <font>
@@ -114,6 +128,16 @@
                <font>
                   <Font size="12.0" />
                </font>
+<<<<<<< HEAD
+               <tooltip>
+                  <Tooltip opacity="0.5" text="Clrears the history!">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Tooltip>
+               </tooltip>
+=======
+>>>>>>> branch 'master' of https://github.com/vanthunder/Calculator
             </Button>
          </children>
       </AnchorPane>
