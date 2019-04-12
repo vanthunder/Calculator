@@ -346,7 +346,14 @@ public class CalculatorController implements Initializable
      Window.setText(sinput+" "+operatorInput+" "+sinput2+" "+"="+" "+resultString);
      historyTask=historyTask+"\n"+sinput+" "+operatorInput+" "+sinput2+" "+"="+" "+resultString;
      System.out.println(historyTask);
-     textArea.setText(historyTask);	 
+     textArea.setText(historyTask);
+     input2=0;
+     sinput="";
+     sinput2="";
+     operatorInput="";
+     resultString="";
+     input1=result1;
+     sinput=String.valueOf(input1);
      }
   public void clrpress(ActionEvent event) 
      {
@@ -362,7 +369,7 @@ public class CalculatorController implements Initializable
   public void commapress(ActionEvent event)
   {
 	   System.out.println("Button , Clicked!");
-	   if(!sinput.equals("") && !sinput.contains("."))
+	   if(!sinput.equals("") && !sinput.contains(".") && operatorInput.contentEquals(""))
 	   {
 		 sinput=sinput+".";
 		 System.out.println(sinput);

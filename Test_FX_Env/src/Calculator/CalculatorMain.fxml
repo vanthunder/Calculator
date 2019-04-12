@@ -10,134 +10,131 @@
    <bottom>
       <AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="440.0" prefWidth="500.0" BorderPane.alignment="CENTER">
          <children>
-            <Button fx:id="B1" layoutX="68.0" layoutY="278.0" mnemonicParsing="false" onAction="#B1press" text="1">
+            <Button fx:id="B1" layoutX="53.0" layoutY="278.0" mnemonicParsing="false" onAction="#B1press" text="1">
                <font>
                   <Font size="24.0" />
                </font>
             </Button>
-            <Button fx:id="B2" layoutX="125.0" layoutY="278.0" mnemonicParsing="false" onAction="#B2press" text="2">
+            <Button fx:id="B2" layoutX="110.0" layoutY="278.0" mnemonicParsing="false" onAction="#B2press" text="2">
                <font>
                   <Font size="24.0" />
                </font>
             </Button>
-            <Button fx:id="B3" layoutX="183.0" layoutY="278.0" mnemonicParsing="false" onAction="#B3press" text="3">
+            <Button fx:id="B3" layoutX="168.0" layoutY="278.0" mnemonicParsing="false" onAction="#B3press" text="3">
                <font>
                   <Font size="24.0" />
                </font>
             </Button>
-            <Button fx:id="B6" layoutX="183.0" layoutY="215.0" mnemonicParsing="false" onAction="#B6press" text="6">
+            <Button fx:id="B6" layoutX="168.0" layoutY="215.0" mnemonicParsing="false" onAction="#B6press" text="6">
                <font>
                   <Font size="24.0" />
                </font>
             </Button>
-            <Button fx:id="B5" layoutX="125.0" layoutY="215.0" mnemonicParsing="false" onAction="#B5press" text="5">
+            <Button fx:id="B5" layoutX="110.0" layoutY="215.0" mnemonicParsing="false" onAction="#B5press" text="5">
                <font>
                   <Font size="24.0" />
                </font>
             </Button>
-            <Button fx:id="B4" layoutX="68.0" layoutY="215.0" mnemonicParsing="false" onAction="#B4press" text="4">
+            <Button fx:id="B4" layoutX="53.0" layoutY="215.0" mnemonicParsing="false" onAction="#B4press" text="4">
                <font>
                   <Font size="24.0" />
                </font>
             </Button>
-            <Button fx:id="B7" layoutX="68.0" layoutY="147.0" mnemonicParsing="false" onAction="#B7press" text="7">
+            <Button fx:id="B7" layoutX="53.0" layoutY="147.0" mnemonicParsing="false" onAction="#B7press" text="7">
                <font>
                   <Font size="24.0" />
                </font>
             </Button>
-            <Button fx:id="B8" layoutX="125.0" layoutY="147.0" mnemonicParsing="false" onAction="#B8press" text="8">
+            <Button fx:id="B8" layoutX="110.0" layoutY="147.0" mnemonicParsing="false" onAction="#B8press" text="8">
                <font>
                   <Font size="24.0" />
                </font>
             </Button>
-            <Button fx:id="B9" layoutX="183.0" layoutY="147.0" mnemonicParsing="false" onAction="#B9press" text="9">
+            <Button fx:id="B9" layoutX="168.0" layoutY="147.0" mnemonicParsing="false" onAction="#B9press" text="9">
                <font>
                   <Font size="24.0" />
                </font>
             </Button>
-            <Button fx:id="B0" layoutX="125.0" layoutY="339.0" mnemonicParsing="false" onAction="#B0press" text="0">
+            <Button fx:id="B0" layoutX="110.0" layoutY="339.0" mnemonicParsing="false" onAction="#B0press" text="0">
                <font>
                   <Font size="24.0" />
                </font>
             </Button>
-            <Button fx:id="plus" layoutX="245.0" layoutY="147.0" mnemonicParsing="false" onAction="#pluspress" prefHeight="51.0" prefWidth="54.0" text="+">
+            <Button fx:id="plus" layoutX="230.0" layoutY="147.0" mnemonicParsing="false" onAction="#pluspress" prefHeight="51.0" prefWidth="54.0" text="+">
                <font>
                   <Font size="24.0" />
                </font>
             </Button>
-            <Button fx:id="minus" layoutX="246.0" layoutY="215.0" mnemonicParsing="false" onAction="#minuspress" prefHeight="51.0" prefWidth="52.0" text="-">
+            <Button fx:id="minus" layoutX="231.0" layoutY="215.0" mnemonicParsing="false" onAction="#minuspress" prefHeight="51.0" prefWidth="52.0" text="-">
                <font>
                   <Font size="24.0" />
                </font>
             </Button>
-            <Button fx:id="divide" layoutX="246.0" layoutY="339.0" mnemonicParsing="false" onAction="#dividepress" prefHeight="51.0" prefWidth="51.0" text="/">
+            <Button fx:id="divide" layoutX="231.0" layoutY="339.0" mnemonicParsing="false" onAction="#dividepress" prefHeight="51.0" prefWidth="51.0" text="/">
                <font>
                   <Font size="24.0" />
                </font>
             </Button>
-            <Button fx:id="multiplier" layoutX="245.0" layoutY="278.0" mnemonicParsing="false" onAction="#multiplierpress" prefHeight="51.0" prefWidth="54.0" text="*">
+            <Button fx:id="multiplier" layoutX="230.0" layoutY="278.0" mnemonicParsing="false" onAction="#multiplierpress" prefHeight="51.0" prefWidth="54.0" text="*">
                <font>
                   <Font size="24.0" />
                </font>
             </Button>
-            <Button fx:id="result" layoutX="184.0" layoutY="339.0" mnemonicParsing="false" onAction="#resultpress" prefHeight="51.0" prefWidth="45.0" text="=">
+            <Button fx:id="result" layoutX="169.0" layoutY="339.0" mnemonicParsing="false" onAction="#resultpress" prefHeight="51.0" prefWidth="45.0" text="=">
                <font>
                   <Font size="18.0" />
                </font>
             </Button>
-            <TextField fx:id="Window" editable="false" layoutX="68.0" layoutY="14.0" prefHeight="69.0" prefWidth="395.0">
+            <TextField fx:id="Window" editable="false" layoutX="53.0" layoutY="14.0" prefHeight="69.0" prefWidth="395.0">
                <font>
                   <Font size="24.0" />
                </font>
             </TextField>
-            <Button fx:id="clrButton" layoutX="181.0" layoutY="87.0" mnemonicParsing="false" onAction="#clrpress" prefHeight="51.0" prefWidth="49.0" text="CLR">
+            <Button fx:id="clrButton" layoutX="166.0" layoutY="87.0" mnemonicParsing="false" onAction="#clrpress" prefHeight="51.0" prefWidth="49.0" text="CLR">
                <font>
                   <Font size="14.0" />
                </font>
                <tooltip>
                   <Tooltip opacity="0.5" text="Clears the screen!">
                      <font>
-                        <Font size="24.0" />
+                        <Font size="18.0" />
                      </font>
                   </Tooltip>
                </tooltip></Button>
-            <Button fx:id="erase" layoutX="68.0" layoutY="87.0" mnemonicParsing="false" onAction="#erasepress" prefHeight="51.0" prefWidth="45.0" text="ERS">
+            <Button fx:id="erase" layoutX="53.0" layoutY="87.0" mnemonicParsing="false" onAction="#erasepress" prefHeight="51.0" prefWidth="45.0" text="ERS">
                <font>
                   <Font size="14.0" />
                </font>
                <tooltip>
                   <Tooltip opacity="0.5" text="Ereases the last char!">
                      <font>
-                        <Font size="24.0" />
+                        <Font size="18.0" />
                      </font>
                   </Tooltip>
                </tooltip>
             </Button>
-            <Button fx:id="comma" layoutX="68.0" layoutY="339.0" mnemonicParsing="false" onAction="#commapress" prefHeight="51.0" prefWidth="45.0" text=",">
+            <Button fx:id="comma" layoutX="53.0" layoutY="339.0" mnemonicParsing="false" onAction="#commapress" prefHeight="51.0" prefWidth="45.0" text=",">
                <font>
                   <Font size="24.0" />
                </font>
             </Button>
-            <TextArea fx:id="textArea" editable="false" layoutX="319.0" layoutY="113.0" prefHeight="280.0" prefWidth="144.0" />
-            <Label alignment="CENTER" layoutX="358.0" layoutY="87.0" prefHeight="22.0" prefWidth="66.0" text="History" textFill="#001aff">
+            <TextArea fx:id="textArea" editable="false" layoutX="304.0" layoutY="113.0" prefHeight="280.0" prefWidth="144.0" />
+            <Label alignment="CENTER" layoutX="343.0" layoutY="87.0" prefHeight="22.0" prefWidth="66.0" text="History" textFill="#00000080">
                <font>
                   <Font size="18.0" />
                </font>
             </Label>
-            <Button fx:id="clrhbutton" layoutX="248.0" layoutY="89.0" mnemonicParsing="false" onAction="#clrhPress" prefHeight="45.0" prefWidth="48.0" text="CLRH">
+            <Button fx:id="clrhbutton" layoutX="230.0" layoutY="88.0" mnemonicParsing="false" onAction="#clrhPress" prefHeight="51.0" prefWidth="54.0" text="CLRH">
                <font>
                   <Font size="12.0" />
                </font>
-<<<<<<< HEAD
                <tooltip>
                   <Tooltip opacity="0.5" text="Clrears the history!">
                      <font>
-                        <Font size="24.0" />
+                        <Font size="18.0" />
                      </font>
                   </Tooltip>
                </tooltip>
-=======
->>>>>>> branch 'master' of https://github.com/vanthunder/Calculator
             </Button>
          </children>
       </AnchorPane>
