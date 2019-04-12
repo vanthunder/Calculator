@@ -110,6 +110,11 @@
                   <Font size="18.0" />
                </font>
             </Label>
+            <Button fx:id="clrhbutton" layoutX="248.0" layoutY="89.0" mnemonicParsing="false" onAction="#clrhPress" prefHeight="45.0" prefWidth="48.0" text="CLRH">
+               <font>
+                  <Font size="12.0" />
+               </font>
+            </Button>
          </children>
       </AnchorPane>
    </bottom>

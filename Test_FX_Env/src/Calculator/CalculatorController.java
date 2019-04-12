@@ -36,6 +36,7 @@ public class CalculatorController implements Initializable
 	 private Button clrButton;
 	 private Button erase;
 	 private Button comma;
+	 private Button clrhbutton;
 	 
 	 //Textfield
 	 @FXML
@@ -410,6 +411,12 @@ public class CalculatorController implements Initializable
 	   
 	   
 	   
+  }
+  
+  public void clrhPress(ActionEvent event)
+  {
+	  historyTask="";
+	  textArea.setText("");
   }
 	  
 	}
