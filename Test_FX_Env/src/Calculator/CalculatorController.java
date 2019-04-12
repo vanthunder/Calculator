@@ -40,11 +40,15 @@ public class CalculatorController implements Initializable
 	 //Textfield
 	 @FXML
 	 private TextField Window;
-	 
-	 
+	 @FXML
+	 //TextArea
+	 private TextArea textArea;
 	 //ints to save inputs
 	 private double input1;
 	 private double input2;
+	 
+	 //int to count a button input
+	 private int buttonCounter=0;
 	 
 	 //double to save the result
 	 private double result1;
@@ -55,6 +59,7 @@ public class CalculatorController implements Initializable
 	 private String operatorInput = "";
 	 private String inttostring;
 	 private String resultString="";
+	 private String historyTask="";
 	 @FXML
 	 private Label label;
 	 
@@ -338,6 +343,9 @@ public class CalculatorController implements Initializable
      System.out.println(input1);
      resultString=String.valueOf(result1);
      Window.setText(sinput+" "+operatorInput+" "+sinput2+" "+"="+" "+resultString);
+     historyTask=historyTask+"\n"+sinput+" "+operatorInput+" "+sinput2+" "+"="+" "+resultString;
+     System.out.println(historyTask);
+     textArea.setText(historyTask);	 
      }
   public void clrpress(ActionEvent event) 
      {

@@ -6,7 +6,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.BorderPane?>
 
-<BorderPane prefHeight="451.0" prefWidth="491.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Calculator.CalculatorController">
+<BorderPane prefHeight="451.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Calculator.CalculatorController">
    <bottom>
       <AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="440.0" prefWidth="500.0" BorderPane.alignment="CENTER">
          <children>
@@ -85,12 +85,11 @@
                   <Font size="18.0" />
                </font>
             </Button>
-            <TextField fx:id="Window" editable="false" layoutX="68.0" layoutY="14.0" prefHeight="42.0" prefWidth="315.0">
+            <TextField fx:id="Window" editable="false" layoutX="68.0" layoutY="14.0" prefHeight="69.0" prefWidth="395.0">
                <font>
                   <Font size="24.0" />
                </font>
             </TextField>
-            <Label fx:id="label" layoutX="198.0" layoutY="11.0" prefHeight="38.0" prefWidth="115.0" />
             <Button fx:id="clrButton" layoutX="181.0" layoutY="87.0" mnemonicParsing="false" onAction="#clrpress" prefHeight="51.0" prefWidth="49.0" text="CLR">
                <font>
                   <Font size="14.0" />
@@ -105,6 +104,12 @@
                   <Font size="24.0" />
                </font>
             </Button>
+            <TextArea fx:id="textArea" editable="false" layoutX="319.0" layoutY="113.0" prefHeight="280.0" prefWidth="144.0" />
+            <Label alignment="CENTER" layoutX="358.0" layoutY="87.0" prefHeight="22.0" prefWidth="66.0" text="History" textFill="#001aff">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
          </children>
       </AnchorPane>
    </bottom>
