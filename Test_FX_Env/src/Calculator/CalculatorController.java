@@ -54,7 +54,7 @@ public class CalculatorController implements Initializable
 	 private String sinput2 = "";
 	 private String operatorInput = "";
 	 private String inttostring;
-	 private String resultString;
+	 private String resultString="";
 	 @FXML
 	 private Label label;
 	 
@@ -284,7 +284,7 @@ public class CalculatorController implements Initializable
       		 Window.setText(sinput+" "+operatorInput+" "+sinput2); 
     	   }
     	   else
-    	   if(!sinput.equals("") && sinput2.isEmpty())
+    	   if(!sinput.equals("") && sinput2.equals(""))
     	   {
     	   System.out.println("Button - Clicked!");
 	       operatorInput="-";
@@ -347,6 +347,7 @@ public class CalculatorController implements Initializable
      sinput="";
      sinput2="";
      operatorInput="";
+     resultString="";
      Window.setText("");
      }
   public void commapress(ActionEvent event)
@@ -374,7 +375,7 @@ public class CalculatorController implements Initializable
 	   {
 		 sinput = sinput.substring(0, sinput.length()-1);
 		 System.out.println(sinput);
-		 if(!sinput.isEmpty())
+		 if(!sinput.isEmpty() && !sinput.contentEquals("-"))
 		 {	 
 		 input1=Double.parseDouble(sinput);
 		 }
@@ -382,16 +383,16 @@ public class CalculatorController implements Initializable
 		 Window.setText(sinput);
 	   }
 	   else
-	   if(!operatorInput.isEmpty() && resultString.isEmpty())
+	   if(!operatorInput.isEmpty() && resultString.isEmpty() && sinput2.isEmpty())
 	   {
-		 operatorInput = operatorInput.substring(0, operatorInput.length()-1);
+		 operatorInput = "";
 		 Window.setText(sinput+operatorInput);
 	   }
 	   else
-	   if(!sinput2.contentEquals("") && resultString.isEmpty())
+	   if(!sinput2.isEmpty() && resultString.isEmpty())
 	   {
 		 sinput2 = sinput2.substring(0, sinput2.length()-1);
-		 if(!sinput2.isEmpty())
+		 if(!sinput2.isEmpty() && !sinput2.contentEquals("-"))
 		 {	 
 		 input2=Double.parseDouble(sinput2);
 		 }
