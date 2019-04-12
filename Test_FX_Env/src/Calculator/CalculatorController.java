@@ -43,8 +43,8 @@ public class CalculatorController implements Initializable
 	 
 	 
 	 //ints to save inputs
-	 private int input1;
-	 private int input2;
+	 private double input1;
+	 private double input2;
 	 
 	 //double to save the result
 	 private double result1;
@@ -76,14 +76,14 @@ public class CalculatorController implements Initializable
 		   if(operatorInput.contentEquals(""))
 		   {
 	       sinput=sinput+"0";
-	       input1=Integer.parseInt(sinput);
+	       input1=Double.parseDouble(sinput);
 	       System.out.println(sinput);
 	       Window.setText(sinput);
 		   }
 		   if(!operatorInput.contentEquals(""))
 		   {
 		   sinput2=sinput2+"0";
-		   input2=Integer.parseInt(sinput2);
+		   input2=Double.parseDouble(sinput2);
 		   System.out.println(sinput2);
 		   Window.setText(sinput+" "+operatorInput+" "+sinput2);
 		   }
@@ -95,14 +95,14 @@ public class CalculatorController implements Initializable
 		   if(operatorInput.contentEquals(""))
 		   {
 	       sinput=sinput+"1";
-	       input1=Integer.parseInt(sinput);
+	       input1=Double.parseDouble(sinput);
 	       System.out.println(sinput);
 	       Window.setText(sinput);
 		   }
 		   if(!operatorInput.contentEquals(""))
 		   {
 		   sinput2=sinput2+"1";
-		   input2=Integer.parseInt(sinput2);
+		   input2=Double.parseDouble(sinput2);
 		   System.out.println(sinput2);
 		   Window.setText(sinput+" "+operatorInput+" "+sinput2);
 		   }
@@ -114,14 +114,14 @@ public class CalculatorController implements Initializable
 		   if(operatorInput.contentEquals(""))
 		   {
 	       sinput=sinput+"2";
-	       input1=Integer.parseInt(sinput);
+	       input1=Double.parseDouble(sinput);
 	       System.out.println(sinput);
 	       Window.setText(sinput);
 		   }
 		   if(!operatorInput.contentEquals(""))
 		   {
 		   sinput2=sinput2+"2";
-		   input2=Integer.parseInt(sinput2);
+		   input2=Double.parseDouble(sinput2);
 		   System.out.println(sinput2);
 		   Window.setText(sinput+" "+operatorInput+" "+sinput2);
 		   }
@@ -133,14 +133,14 @@ public class CalculatorController implements Initializable
 		   if(operatorInput.contentEquals(""))
 		   {
 	       sinput=sinput+"3";
-	       input1=Integer.parseInt(sinput);
+	       input1=Double.parseDouble(sinput);
 	       System.out.println(sinput);
 	       Window.setText(sinput);
 		   }
 		   if(!operatorInput.contentEquals(""))
 		   {
 		   sinput2=sinput2+"3";
-		   input2=Integer.parseInt(sinput2);
+		   input2=Double.parseDouble(sinput2);
 		   System.out.println(sinput2);
 		   Window.setText(sinput+" "+operatorInput+" "+sinput2);
 		   }
@@ -152,14 +152,14 @@ public class CalculatorController implements Initializable
 		   if(operatorInput.contentEquals(""))
 		   {
 	       sinput=sinput+"4";
-	       input1=Integer.parseInt(sinput);
+	       input1=Double.parseDouble(sinput);
 	       System.out.println(sinput);
 	       Window.setText(sinput);
 		   }
 		   if(!operatorInput.contentEquals(""))
 		   {
 		   sinput2=sinput2+"4";
-		   input2=Integer.parseInt(sinput2);
+		   input2=Double.parseDouble(sinput2);
 		   System.out.println(sinput2);
 		   Window.setText(sinput+" "+operatorInput+" "+sinput2);
 		   }
@@ -171,14 +171,14 @@ public class CalculatorController implements Initializable
 		   if(operatorInput.contentEquals(""))
 		   {
 	       sinput=sinput+"5";
-	       input1=Integer.parseInt(sinput);
+	       input1=Double.parseDouble(sinput);
 	       System.out.println(sinput);
 	       Window.setText(sinput);
 		   }
 		   if(!operatorInput.contentEquals(""))
 		   {
 		   sinput2=sinput2+"5";
-		   input2=Integer.parseInt(sinput2);
+		   input2=Double.parseDouble(sinput2);
 		   System.out.println(sinput2);
 		   Window.setText(sinput+" "+operatorInput+" "+sinput2);
 		   }
@@ -190,14 +190,14 @@ public class CalculatorController implements Initializable
 		   if(operatorInput.contentEquals(""))
 		   {
 	       sinput=sinput+"6";
-	       input1=Integer.parseInt(sinput);
+	       input1=Double.parseDouble(sinput);
 	       System.out.println(sinput);
 	       Window.setText(sinput);
 		   }
 		   if(!operatorInput.contentEquals(""))
 		   {
 		   sinput2=sinput2+"6";
-		   input2=Integer.parseInt(sinput2);
+		   input2=Double.parseDouble(sinput2);
 		   System.out.println(sinput2);
 		   Window.setText(sinput+" "+operatorInput+" "+sinput2);
 		   }
@@ -209,14 +209,14 @@ public class CalculatorController implements Initializable
 		   if(operatorInput.contentEquals(""))
 		   {
 	       sinput=sinput+"7";
-	       input1=Integer.parseInt(sinput);
+	       input1=Double.parseDouble(sinput);
 	       System.out.println(sinput);
 	       Window.setText(sinput);
 		   }
 		   if(!operatorInput.contentEquals(""))
 		   {
 		   sinput2=sinput2+"7";
-		   input2=Integer.parseInt(sinput2);
+		   input2=Double.parseDouble(sinput2);
 		   System.out.println(sinput2);
 		   Window.setText(sinput+" "+operatorInput+" "+sinput2);
 		   }
@@ -228,14 +228,14 @@ public class CalculatorController implements Initializable
 		   if(operatorInput.contentEquals(""))
 		   {
 	       sinput=sinput+"8";
-	       input1=Integer.parseInt(sinput);
+	       input1=Double.parseDouble(sinput);
 	       System.out.println(sinput);
 	       Window.setText(sinput);
 		   }
 		   if(!operatorInput.contentEquals(""))
 		   {
 		   sinput2=sinput2+"8";
-		   input2=Integer.parseInt(sinput2);
+		   input2=Double.parseDouble(sinput2);
 		   System.out.println(sinput2);
 		   Window.setText(sinput+" "+operatorInput+" "+sinput2);
 		   }
@@ -247,14 +247,14 @@ public class CalculatorController implements Initializable
 		   if(operatorInput.contentEquals(""))
 		   {
 	       sinput=sinput+"9";
-	       input1=Integer.parseInt(sinput);
+	       input1=Double.parseDouble(sinput);
 	       System.out.println(sinput);
 	       Window.setText(sinput);
 		   }
 		   if(!operatorInput.contentEquals(""))
 		   {
 		   sinput2=sinput2+"9";
-		   input2=Integer.parseInt(sinput2);
+		   input2=Double.parseDouble(sinput2);
 		   System.out.println(sinput2);
 		   Window.setText(sinput+" "+operatorInput+" "+sinput2);
 		   }
@@ -277,14 +277,14 @@ public class CalculatorController implements Initializable
     		 Window.setText(sinput);
     	   }
     	   else
-    	   if(sinput2.contentEquals(""))
+    	   if(sinput2.contentEquals("") && !operatorInput.isEmpty())
     	   {
     		 sinput2="-";
       		 System.out.println(sinput2);
       		 Window.setText(sinput+" "+operatorInput+" "+sinput2); 
     	   }
     	   else
-    	   if(!sinput.isEmpty() || sinput2.isEmpty())
+    	   if(!sinput.equals("") && sinput2.isEmpty())
     	   {
     	   System.out.println("Button - Clicked!");
 	       operatorInput="-";
@@ -292,35 +292,35 @@ public class CalculatorController implements Initializable
 	       Window.setText(sinput+" "+operatorInput+" "+sinput2);
     	   }
 	   }
-    public void dividepress(ActionEvent event) 
+   public void dividepress(ActionEvent event) 
       {
     	   System.out.println("Button / Clicked!");
 	       operatorInput="/";
 	       System.out.println(operatorInput);
 	       Window.setText(sinput+" "+operatorInput);
       }
- public void multiplierpress(ActionEvent event) 
+   public void multiplierpress(ActionEvent event) 
      {
 	 System.out.println("Button * Clicked!");
      operatorInput="*";
      System.out.println(operatorInput);
      Window.setText(sinput+" "+operatorInput);
      }
- public void resultpress(ActionEvent event) 
+   public void resultpress(ActionEvent event) 
     {
      System.out.println("Button = Clicked!");
      if(operatorInput.contentEquals("+"))
      {
-    	 //result1=input1+input1;
     	 input1=input1+input2;
     	 System.out.println(input1);
          result1=input1;
-         
      }
      else
      if(operatorInput.contentEquals("-"))
      {
-         result1=input1-input2;
+    	 input1=input1-input2;
+    	 System.out.println(input1);
+         result1=input1;
      }
      else
      if(operatorInput.contentEquals("*"))
@@ -331,7 +331,9 @@ public class CalculatorController implements Initializable
      else
      if(operatorInput.contentEquals("/"))
      {
-         result1=input1/input1;
+    	 input1=input1/input2;
+         result1=input1;
+         System.out.println(input1);
      }
      System.out.println(input1);
      resultString=String.valueOf(result1);
@@ -349,12 +351,56 @@ public class CalculatorController implements Initializable
      }
   public void commapress(ActionEvent event)
   {
-	   //WIP
 	   System.out.println("Button , Clicked!");
+	   if(!sinput.equals("") && !sinput.contains("."))
+	   {
+		 sinput=sinput+".";
+		 System.out.println(sinput);
+		 Window.setText(sinput);
+	   }
+	   else
+	   if(!sinput2.contentEquals("") && !operatorInput.contentEquals("") && !sinput2.contains("."))
+	   {
+		 sinput2=sinput2+".";
+  		 System.out.println(sinput2);
+  		 Window.setText(sinput+" "+operatorInput+" "+sinput2); 
+	   }
+	   
   }
   public void erasepress(ActionEvent event)
   {    //WIP
-	   System.out.println("Button , Clicked!");
+	   System.out.println("Button ERS Clicked!");
+	   if(!sinput.equals("") && operatorInput.isEmpty() && resultString.isEmpty())
+	   {
+		 sinput = sinput.substring(0, sinput.length()-1);
+		 System.out.println(sinput);
+		 if(!sinput.isEmpty())
+		 {	 
+		 input1=Double.parseDouble(sinput);
+		 }
+		 System.out.println(sinput);
+		 Window.setText(sinput);
+	   }
+	   else
+	   if(!operatorInput.isEmpty() && resultString.isEmpty())
+	   {
+		 operatorInput = operatorInput.substring(0, operatorInput.length()-1);
+		 Window.setText(sinput+operatorInput);
+	   }
+	   else
+	   if(!sinput2.contentEquals("") && resultString.isEmpty())
+	   {
+		 sinput2 = sinput2.substring(0, sinput2.length()-1);
+		 if(!sinput2.isEmpty())
+		 {	 
+		 input2=Double.parseDouble(sinput2);
+		 }
+		 System.out.println(sinput2);
+	  	 Window.setText(sinput+" "+operatorInput+" "+sinput2); 
+	   }
+	   
+	   
+	   
   }
 	  
 	}
